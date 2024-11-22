@@ -24,3 +24,27 @@
 3. Запустите приложение
    ```sh
    python main.py
+   
+## Документация
+
+### Классы и методы
+
+**Book**: Класс, представляющий книгу.
+
+ - __init__(self, title, author, year, status="в наличии"): Инициализация книги.
+ - to_dict(self): Преобразование книги в словарь.  
+
+**Library**: Класс, представляющий библиотеку.
+ 
+ - __init__(self, file_path="books.json"): Инициализация библиотеки.
+ - load_books(self): Загрузка книг из файла.
+ - save_books(self): Сохранение книг в файл.
+ - add_book(self, title, author, year): Добавление книги.
+ - delete_book(self, book_id): Удаление книги.
+ - search_books(self, title=None, author=None, year=None): Поиск книг.
+ - display_books(self): Отображение всех книг.
+ - change_status(self, book_id, new_status): Изменение статуса книги.
+
+# Тестирование
+   ```sh
+   python -m unittest test_library.py
