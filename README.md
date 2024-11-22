@@ -16,7 +16,7 @@
 
 1. Склонируйте репозиторий:
    ```sh
-   git clone 
+   git clone https://github.com/meR1D1AN/system_library_management.git
 
 2. Перейдите в директорию проекта:
    ```sh
